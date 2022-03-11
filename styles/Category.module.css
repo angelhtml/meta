@@ -1,0 +1,100 @@
+.Category{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2rem;
+}
+.Categorybox1{
+    flex: 50%;
+}
+.Categorybox2{
+    flex: 50%;
+}
+.section1{
+    width: 90%;
+    margin-left: 5%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    transition: 0.5s ease-in;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.397);
+}
+.section2{
+    width: 90%;
+    margin-left: 5%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+.picture{
+    height: 240px;
+    width: 100%;
+    position: relative;
+    transition: 0.5s ease-in;
+}
+.content1{
+    background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  left: 0;
+  top: 200px;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+  z-index: 1;
+  transition: 0.5s ease-in;
+}
+.platformname{
+    color: rgba(255, 255, 255, 0.719);
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    top: 85%;
+    left: 33%;
+    z-index: 2;
+    transition: 0.5s ease-in;
+}
+/*
+.section1:hover{
+    transform: translateY(-5px);
+}
+.section1:hover .content1{
+    height: 100%;
+    top: 0%;
+}
+.section1:hover .platformname{
+    top: 50%;
+}
+*/
+@media screen and (max-width:768px){
+    .Category{
+        flex-direction: column;
+        margin-top: 0%;
+    }
+    .section1,
+    .section2{
+        margin-top: 2rem;
+    }
+    .picture{
+        height: 200px;
+    }
+    .content1{
+        top: 160px;
+    }
+}
+@media screen and (max-width:380px){
+    .picture{
+        height: 120px;
+        position: relative;
+    }
+    .content1{
+        top: 85px;
+        height: 30%;
+    }
+    .platformname{
+        top: 75%;
+        left: 25%;
+    }
+}
